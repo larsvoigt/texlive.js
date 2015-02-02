@@ -33,27 +33,6 @@
     <script src="promisejs/promise.js"></script>
     <script src="pdftex.js"></script>
 
-    <h1>texlive.js – A LaTeX Compiler for Javascript</h1>
-    <a href="https://github.com/manuels/texlive.js/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
-    <h2>
-      Usage
-    </h2>
-    <code style="width: 55em; margin: 0 auto; padding: 1em; display: block">
-      <span class="keyword">var</span> pdftex = <span class="keyword">new</span> PDFTeX();<br />
-      <span class="keyword">var</span> latex_code = <span class="string">""</span> + <br />
-      <span class="string">&nbsp;&nbsp;"\documentclass{article}"</span> + <br />
-      <span class="string">&nbsp;&nbsp;"\begin{document}"</span> + <br />
-      <span class="string">&nbsp;&nbsp;"\LaTeX is great!"</span> + <br />
-      <span class="string">&nbsp;&nbsp;"$E = mc^2$"</span> + <br />
-      <span class="string">&nbsp;&nbsp;"\end{document}"</span>;
-      <br /><br />
-      pdftex.compile(latex_code)<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then(<span class="keyword">function</span>(pdf) {
-        window.open(pdf)
-      });
-    </code>
-
     <div id="tabs">
       <div class="tab" id="tab_input">
         <h2>
@@ -133,12 +112,6 @@
 
     <h2>More Information</h2>
     <p>Checkout the <a href="https://github.com/manuels/texlive.js/wiki">wiki page</a></p>
-
-    <h2>Related Projects</h2>
-    <ul>
-      <li><a href="https://github.com/mozilla/pdf.js">pdf.js</a>: a PDF reader in Javascript by Mozilla</li>
-      <li><a href="https://github.com/kripken/emscripten">emscripten</a>: An LLVM-to-JavaScript Compiler used to create texlive.js</li>
-    </ul>
 
     <script>
       var visibilityChanger = function(element_id) {
